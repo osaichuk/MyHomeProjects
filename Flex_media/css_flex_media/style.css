@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: lightgray;
+	text-align: center;
+	font-size: 20px;
+}
+
+header {
+	height: auto;
+	background: deepskyblue;
+}
+
+.header__menu__nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.header__menu__nav a {
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	display: block;
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__menu__nav a:hover {
+	background: #00b7f5;
+}
+
+
+/* BEGIN main 111*/
+
+.main {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+	padding: 20px;
+	background: darkblue;
+	flex: 1 1 auto;
+}
+
+.cont_1 {
+	flex: 1 1 auto;
+	background: lightblue;
+}
+
+.cont_2 {
+	flex: 1 1 auto;
+	background: lightyellow;
+}
+
+.cont_3 {
+	flex: 1 1 auto;
+	background: lightgreen;
+}
+
+.cont_4 {
+	flex: 1 1 auto;
+	background: pink;
+}
+
+.cont_5 {
+	flex: 1 1 auto;
+	background: purple;
+}
+/* END Main */
+
+footer {
+	height: 10vh;
+	background: gray;
+}
+
+/* Midle screen */
+
+@media all and (min-width: 768px) {
+	body {
+		font-size: 22px;
+	}
+
+	.header__menu__nav {
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	.header__menu__nav a {
+		border-top: none;
+		border-bottom: none;
+	}
+	.header__menu__nav li {
+		flex: 1 1 auto;
+	}
+
+	.main {
+		flex-flow: row wrap;
+	}
+
+	.main div {
+		padding: 10px;
+	}
+
+	.cont_1,
+	.cont_2,
+	.cont_3,
+	.cont_5 {
+		flex: 1 1 50%;
+	}
+
+	.cont_4 {
+		flex: 1 1 auto;
+		order: +1;
+	}
+}
+
+/* Wide screen*/
+
+@media screen and (min-width: 1024px) {
+	body {
+		font-size: 24px;
+	}
+
+	.header__menu__nav {
+		flex-flow: row wrap;
+		justify-content: flex-end;
+	}
+
+	.header__menu__nav li {
+		flex: 0 1 auto;
+		padding: 0 10px;
+	}
+
+	.main {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.main div {
+		padding: 20px;
+	}
+
+	.cont_1,
+	.cont_2,
+	.cont_3 {
+		flex: 1 1 33%;
+	}
+
+	.cont_4,
+	.cont_5 {
+		flex: 1 1 50%;
+		order: 1;
+	}
+}
+
+/*.header__menu__nav li:last-of-type a {
+		border-bottom: none;
+}
+*/

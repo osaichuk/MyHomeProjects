@@ -1,0 +1,31 @@
+.map1 {
+	width: 300px;
+	height: 200px;
+	background-image: url(../img/map.jpg); 
+	background-size: cover;
+	overflow-y: scroll;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: Roboto-bold;
+	src: url(../fonts/Roboto/Roboto-Bold.ttf);
+	font-weight: 700;
+}
+div.map1{
+	font-family: Roboto;
+}
+h1.map {
+	font-family: Roboto-bold;
+}
+h1.map2 {
+	font-family: Poppins;
+}
+h1 + p {
+	font-family: Poppins;
+	font-weight: bold;
+}

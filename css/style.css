@@ -1,0 +1,14 @@
+
+.div__p {
+	font-family: tahoma;
+	font-size: larger;
+}
+
+div {
+	font-family: arial;
+	background: red;
+}
+.headline {
+	color: pink;
+	font-family: verdana;
+}
